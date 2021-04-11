@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Panel administracyjny klientów</title>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Panel administracyjny klientów <i class="fas fa-tools"></i></h1>
+    </div>
+
+    <div class="container">
+
+        <div class="wrap">
+            <input type="button" value="Wczytaj Listę Klientów" onclick="display()">
+            <div class="wynik">
+                <h3>Lista Klientów <i class="fas fa-user-friends"></i> :</h3>
+            </div>
+            <div class="search">
+                <input type="search" name="" id="search" placeholder="wyszukaj klienta"><i class="fas fa-search"></i>
+                <input type="button" value="Szukaj" id="btn1">
+            </div>
+            <div class="wynik1"></div>
+        </div>
+        
+        <div class="user">
+            <h2>Dopisz do listy klientów <i class="fas fa-list"></i></h2>
+            <form action="">
+                <input type="text" name="" id="name" placeholder="name" pattern="[A-ZŁa-złóż]+" required>
+                <input type="text" name="" id="age" placeholder="age" pattern="[0-9]{2}" required>
+                <input type="tel" name="" id="phone" placeholder="phone" pattern="[0-9]{9}" required>
+                <input type="submit" value="Zapisz">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div><i class="fab fa-facebook-square"></i></div>
+        <div><i class="fab fa-youtube"></i></div>
+        <div><i class="fab fa-google"></i></div>
+        <div><i class="fab fa-twitter"></i></div>
+        <div><i class="fas fa-mail-bulk"></i></div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b4e6b4ce55.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
